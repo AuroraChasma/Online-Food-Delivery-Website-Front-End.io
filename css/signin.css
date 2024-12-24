@@ -1,0 +1,68 @@
+/* Root variables for consistent color scheme */
+:root {
+    --primary-color: #FF6B6B;
+    --secondary-color: #4ECDC4;
+    --background-color: #F7FFF7;
+}
+
+/* Full-page background styling */
+body {
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* Container for login/signup form */
+.auth-container {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+/* Tab navigation styling */
+.nav-tabs .nav-link {
+    color: var(--primary-color);
+}
+
+.nav-tabs .nav-link.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Form input styling */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(255,107,107,0.25);
+}
+
+/* Submit button styling */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #FF5252;
+    border-color: #FF5252;
+}
+
+/* Social login buttons */
+.social-login .btn {
+    margin: 0 10px;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 600px; /* You can adjust this value for the desired container width */
+    padding: 0 15px;  /* Add some horizontal padding to avoid sticking edges */
+}
