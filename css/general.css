@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #FF6B6B;     /* Bright coral red */
+    --secondary-color: #4ECDC4;   /* Teal green */
+    --background-color: #F7FFF7;  /* Very light mint green */
+    --text-color: #333;           /* Dark gray for text */
+}
+
+body {
+    background-color: #f4f4f4;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
