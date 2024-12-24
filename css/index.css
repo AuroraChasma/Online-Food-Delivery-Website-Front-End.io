@@ -108,6 +108,7 @@
     height: 100%; /* Make all cards the same height */
 }
 
+
 #productList .card-img-top {
     height: 250px; /* Fixed height for all card images */
     object-fit: cover; /* Ensures image covers the area without distortion */
