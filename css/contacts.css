@@ -2,7 +2,8 @@
 .contact-section {
     padding: 50px 0;
     flex: 1; /* Allows content to expand and push footer to bottom */
-    margin-top: 5%;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .contact-info {
     background-color: white;
@@ -27,6 +28,12 @@
 
 footer {
     margin-top: auto;
+}
+
+
+.close-button {
+    background-color: var(--primary-color);
+    border: none;
 }
 
 

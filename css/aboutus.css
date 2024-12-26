@@ -1,11 +1,13 @@
 
-.about-section {
-    padding: 60px 0;
-    transition: font-size 0.5s;
-    font-size: 20px;
-    margin-top: 5%;
+.about-us {
+    background-color:  white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 24px;
+    margin-bottom: 7%;
+    margin-top: 150px;
 }
-.team-member {
+
+.team-member {    
     text-align: center;
     margin-bottom: 30px;
 }
@@ -15,24 +17,4 @@
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
-}
-.mission-section {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    padding: 40px;
-    display: flex;
-    align-items: center;
-}
-.mission-text {
-    flex: 1;
-    padding-right: 20px;
-}
-.mission-image {
-    flex: 0 0 300px;
-}
-.mission-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
 }

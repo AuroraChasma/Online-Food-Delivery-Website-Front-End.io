@@ -55,41 +55,155 @@
     padding: 0 15px;
 }
 
-.search-container {
-    width:50%;
-    display: flex;
+
+@media (min-width: 992.1px) {
+    .search-container {
+        width:80%;
+        height:100px;
+        display: flex;
+        
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translateX(-50%);
     
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translateX(-50%);
+        z-index: 10;
+        border-radius: 50px;
+        max-width: 600px;
+        min-width: 50px;
+        }
 
-    z-index: 10;
-    border-radius: 50px;
-    max-width: 600px;
+
+    .search-container input {
+        border: none;
+        border-radius: 50px 0 0 50px;
+    }
+
+    .search-container button {
+        background-color: var(--primary-color);
+        border: none;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;;
+        cursor: pointer;
+        height: 100px;
+    }
+    
+    .search-container button:hover{
+        background-color:#d45f5f;
+        border: none;
+    }
+    
+    .search-container button:active{
+        border: none;
+        box-shadow: inset 4px 0px 10px rgba(50, 50, 50, 0.5);
+    }
+    
 }
 
-.search-container input {
-    border: none;
-    border-radius: 50px 0 0 50px;
+@media (min-width: 768.1px) and (max-width: 992px){
+
+    .search-container {
+        width:80%;
+        height:100px;
+        display: flex;
+        
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+    
+        z-index: 10;
+        border-radius: 50px;
+        max-width: 600px;
+        min-width: 50px;
+        zoom: 0.8;
+    }
+
+
+    .search-container input {
+        border: none;
+        border-radius: 50px 0 0 50px;
+    }
+
+    .search-container button {
+        background-color: var(--primary-color);
+        border: none;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;;
+        cursor: pointer;
+        height: 100px;
+    }
+    
+    .search-container button:hover{
+        background-color:#d45f5f;
+        border: none;
+    }
+    
+    .search-container button:active{
+        border: none;
+        box-shadow: inset 4px 0px 10px rgba(50, 50, 50, 0.5);
+    }
+    
 }
 
-.search-container button {
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
+@media (max-width: 768px) and (min-width: 456.1px) {
+    .search-container {
+        width:80%;
+        height: 100px;
+        display: flex;
+        
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+    
+        z-index: 10;
+        border-radius: 50px;
+        max-width: 600px;
+        min-width: 50px;
+        zoom: 0.7;
+    }
+
+
+    .search-container input {
+        border: none;
+        border-radius: 50px 0 0 50px;
+    }
+
+    .search-container button {
+        background-color: var(--primary-color);
+        border: none;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;;
+        cursor: pointer;
+        height: 100px;
+    }
+    
+    .search-container button:hover{
+        background-color:#d45f5f;
+        border: none;
+    }
+    
+    .search-container button:active{
+        border: none;
+        box-shadow: inset 4px 0px 10px rgba(50, 50, 50, 0.5);
+    }
+    
 }
 
-.search-container button:hover{
-    background-color:#d45f5f;
-    border: none;
+@media (max-width: 456px) {
+    .search-container, .search-container input{
+        display: none;
+    }
 }
 
-.search-container button:active{
-    border: none;
-    box-shadow: inset 4px 0px 10px rgba(50, 50, 50, 0.5);
-}
+
 
 
 /*Back to Top Button CSS */
