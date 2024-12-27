@@ -55,7 +55,7 @@
     padding: 0 15px;
 }
 
-
+/* for search bar on top of the carousel */
 @media (min-width: 992.1px) {
     .search-container {
         width:80%;
@@ -203,6 +203,13 @@
     }
 }
 
+
+/* For toggler */
+@media (max-width: 340px) {
+    .navbar-toggler {
+        zoom: 0.7;
+    }
+}
 
 
 

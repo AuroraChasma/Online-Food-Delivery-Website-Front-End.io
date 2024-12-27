@@ -81,3 +81,19 @@ document.addEventListener('DOMContentLoaded', function() {
         modalInstance.hide();
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.querySelector(".navbar");
+
+    // Add event listener to window scroll
+    window.addEventListener("scroll", function () {
+        if (window.scrollY >650) {
+            navbar.classList.add("navbar-solid");
+            navbar.classList.remove("navbar-transparent");
+        } else {
+            navbar.classList.add("navbar-transparent");
+            navbar.classList.remove("navbar-solid");
+        }
+    });
+});
+
