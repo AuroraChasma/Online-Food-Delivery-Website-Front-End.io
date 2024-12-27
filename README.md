@@ -1,16 +1,16 @@
 # Online-Food-Delivery-Website-Only-Front-End-
 
 ### Screenshots of the website:
-![home page - carousel](image.png)
+![home page - carousel](./readme-pictures/image.png)
 
-![alt text](image-5.png)
+![alt text](./readme-pictures/image-5.png)
 
-![alt text](image-4.png)
+![alt text](./readme-pictures/image-4.png)
 
-![contacts page](image-1.png)
+![contacts page](./readme-pictures/image-1.png)
 
-![about us page](image-2.png)
+![about us page](./readme-pictures/image-2.png)
 
-![signup/login page](image-3.png)
+![signup/login page](./readme-pictures/image-3.png)
 
 
