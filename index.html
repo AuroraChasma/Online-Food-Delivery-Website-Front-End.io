@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags for proper rendering and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Page title shown in browser tab -->
     <title>SmartBites - Delicious Food Delivery</title>
     
-    <!-- Bootstrap CSS for responsive design and pre-built components -->
+    <!-- linking bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- linking some fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         
-    <!-- Font Awesome for icons -->
+    <!-- linking font awesome (for icons) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/index.css">
@@ -24,24 +23,21 @@
     
 </head>
 <body>
-    <!-- Navigation Bar -->
-     <!-- navbar-expand-lg: This class indicates that the navigation bar should be expanded on large screens (or larger) and collapsible on smaller screens (like mobile devices). -->
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-transparent">
-        <!-- container-fluid ensures the navbar spans the full width of the viewport. -->
         <div class="container-fluid">
-            <!-- Logo -->
+            <!-- logo -->
             <a class="navbar-brand mx-5 fw-bold" href="index.html">
                 SmartBites
             </a>
             
-            <!-- Mobile Menu Toggle Button -->
+            <!-- the toggle button for small screens -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <!-- Navigation Links -->
+            <!-- links to different webpages-->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- ms-auto pushes nav links to the right. it basically means margin-start(left): auto -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link mx-2" href="html/signin.html">Sign Up/Login</a></li>
                     <li class="nav-item"><a class="nav-link mx-2" href="html/aboutus.html">About Us</a></li>
@@ -52,9 +48,10 @@
     </nav>
 
     <main>
-        <!-- Hero Carousel Section -->
+        <!-- hero carousel section -->
         <section class="hero-carousel">
-            <!-- Search Container (Placed on top of the carousel) -->
+
+            <!-- search container (placed on top of the carousel) -->
             <div class="search-container justify-content-center">
                         <input type="text" placeholder="Enter your delivery address" class="
                          p-5">
@@ -62,22 +59,19 @@
                 </div>
             </div>
     
-    
             <!-- data-bs-ride="carousel activates automatic sliding" -->
             <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" > 
                 <div class="carousel-inner">
-                    <!-- Carousel Item 1 -->
+                    <!-- carousel Item 1 -->
                      <!-- one carousel item must be active for the carousel to be visible. active means that it is the visible slide on page load -->
                     <div class="carousel-item active" style="background-image: url('images/carousel/carousel-1.jpg')">
                         <div class="carousel-overlay">
-                            <!-- display-* is used for really large font-sizes -->
                             <h1 class="display-4 fw-bold mb-4">Delicious Food, Delivered to Your Doorstep</h1>
-                            <!-- lead class is used for introductory text that you want to stand out -->
                             <p class="lead mb-5">Discover local restaurants and order your favorite meals with just a few clicks</p>
                         </div>
                     </div>
     
-                    <!-- Carousel Item 2 -->
+                    <!-- carousel Item 2 -->
                     <div class="carousel-item" style="background-image: url('images/carousel/carousel-2.jpg')">
                         <div class="carousel-overlay">
                             <h1 class="display-4 fw-bold mb-4">Fresh Meals from Local Restaurants</h1>
@@ -85,7 +79,7 @@
                         </div>
                     </div>
     
-                    <!-- Carousel Item 3 -->
+                    <!-- carousel Item 3 -->
                     <div class="carousel-item" style="background-image: url('images/carousel/carousel-3.jpg')">
                         <div class="carousel-overlay">
                             <h1 class="display-4 fw-bold mb-4">Quick and Convenient Dining</h1>
@@ -94,7 +88,7 @@
                     </div>
                 </div>
     
-                <!-- Carousel Controls -->
+                <!-- carousel controls (sliding images on click) -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" ></span>
                     <!-- visually hidden means you can't see with your visually but is visible to screen readers -->
@@ -107,11 +101,11 @@
             </div>
         </section>
     
-        <!-- Filterable Product List Section -->
+        <!-- filterable product list section (shows products that matches what you input) -->
         <section class="product-filter-section container">
             <h2 class="text-center my-5">Our Menu</h2>
             
-            <!-- Search/Filter Input -->
+            <!-- search/filter input (the search bar in which you will type the name of the product(food) -->
             <div class="text-center mb-4">
                 <input 
                     type="text" 
@@ -121,9 +115,9 @@
                 >
             
             </div>
-                <!-- Product List -->
+                <!-- product list -->
                 <div class="row" id="productList">
-                <!-- Product Card 1 -->
+                <!-- product card 1 -->
                 <div class="col-md-4 mb-4 product-item" data-name="Pizza Margherita" data-category="Italian">
                     <div class="card restaurant-card dropshadow2">
                         <img src="images/product-cards/classic-pizza.jpg" class="card-img-top" alt="Pizza Margherita">
@@ -146,8 +140,7 @@
                 </div>
     
     
-    
-                <!-- Product Card 2 -->
+                <!-- product card 2 -->
                 <div class="col-md-4 mb-4 product-item" data-name="Caesar Salad" data-category="Salad">
                     <div class="card restaurant-card dropshadow2">
                         <img src="images/product-cards/caesar-salad.jpg" class="card-img-top" alt="Caesar Salad">
@@ -169,7 +162,7 @@
                     </div>
                 </div>
     
-                <!-- Product Card 3 -->
+                <!-- product card 3 -->
                 <div class="col-md-4 mb-4 product-item" data-name="Classic Burger" data-category="Burger">
                     <div class="card restaurant-card dropshadow2">
                         <img src="images/product-cards/cheese-burger.jpg" class="card-img-top" alt="Burger">
@@ -191,7 +184,7 @@
                     </div>
                 </div>
     
-                <!-- Product Card 4 -->
+                <!-- product card 4 -->
                 <div class="col-md-4 mb-4 product-item" data-name="California Sushi Rolls" data-category="Rolls">
                     <div class="card restaurant-card dropshadow2">
                         <img src="images/product-cards/sushi-roll.jpg" class="card-img-top" alt="Sushi Rolls">
@@ -213,7 +206,7 @@
                     </div>
                 </div>
     
-                <!-- Product Card 5 -->
+                <!-- product card 5 -->
                 <div class="col-md-4 mb-4 product-item" data-name="Pasta Carbonara" data-category="Pasta">
                     <div class="card restaurant-card dropshadow2">
                         <img src="images/product-cards/pasta.jpg" class="card-img-top" alt="Pasta">
@@ -235,7 +228,7 @@
                     </div>
                 </div>
     
-                <!-- Product Card 6 -->
+                <!-- product card 6 -->
                 <div class="col-md-4 mb-4 product-item" data-name="Greek Salad" data-category="Salad">
                     <div class="card restaurant-card dropshadow2">
                         <img src="images/product-cards/greek-salad.webp" class="card-img-top" alt="Salad">
@@ -258,9 +251,8 @@
                 </div>
         </section>
     
-    
-        
-         <!-- Order Modal -->
+     
+         <!-- order modal (shows after clicking place order)-->
          <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content dropshadow2">
@@ -304,7 +296,7 @@
             </div>
         </div>
     
-        <!-- Order Confirmed Modal -->
+        <!-- order confirmed modal (show after pressing confirm order.).-->
         <div class="modal fade" id="confirmedOrderModal" tabindex="-1" aria-labelledby="confirmedOrderModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content dropshadow2">
@@ -320,7 +312,7 @@
             </div>
         </div>
     
-            <!-- Track Order Fullscreen Modal -->
+            <!-- Modal whih tracks our order -->
         <div class="modal modal-fullscreen" id="trackOrderModal" tabindex="-1" aria-labelledby="trackOrderModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content dropshadow2">
@@ -337,7 +329,7 @@
                                 </div>
                             </div>
     
-                            <!-- Order Tracking Steps -->
+
                             <div class="order-tracking">
                                 <div class="tracking-step active">
                                     <div class="step-icon">
@@ -384,7 +376,7 @@
                                 </div>
                             </div>
     
-                            <!-- Driver Information -->
+                            
                             <div class="driver-info mt-4 text-center">
                                 <h5>Your Delivery Partner</h5>
                                 <div class="d-flex justify-content-center align-items-center mt-3">
@@ -410,11 +402,11 @@
     
     
         
-        <!-- Popular Restaurants -->
+        <!-- popular restaurants -->
         <section class="container my-5">
             <h2 class="text-center mb-5">Popular Restaurants</h2>
             <div class="row">
-                <!-- Restaurant Card 1 -->
+                <!-- restaurant card 1 -->
                 <div class="col-md-4 mb-4">
                     <div class="card restaurant-card dropshadow2">
                         <img src="images/restaurant-cards/restaurant-1.jpg" class="card-img-top" alt="Restaurant 1">
@@ -429,7 +421,7 @@
                     </div>
                 </div>
     
-                <!-- Restaurant Card 2 -->
+                <!-- restaurant card 2 -->
                 <div class="col-md-4 mb-4">
                     <div class="card restaurant-card dropshadow2">
                         <img src="images/restaurant-cards/restaurant-2.webp" class="card-img-top" alt="Restaurant 2">
@@ -444,7 +436,7 @@
                     </div>
                 </div>
     
-                <!-- Restaurant Card 3 -->
+                <!-- restaurant card 3 -->
                 <div class="col-md-4 mb-4">
                     <div class="card restaurant-card dropshadow2">
                         <img src="images/restaurant-cards/restaurant-3.jpg" class="card-img-top" alt="Restaurant 3">
@@ -461,7 +453,7 @@
             </div>
         </section>
     
-        <!-- How It Works Section -->
+        <!-- how it works section -->
         <section class="how-it-works-section py-5 bg-white">
             <div class="container">
                 <h2 class="mb-5">How SmartBites Works</h2>
@@ -490,46 +482,45 @@
             </div>
         </section>
     
-        <!-- Back to Top Button -->
+        <!-- back to top button -->
         <div class="d-flex flex-row justify-content-center align-items-center m-5">
             <a href="#" class="btn btn-primary btn-lg back-to-top dropshadow p-3"  role="button" aria-disabled="true">Back to Top</a>
         </div>
     </main>
      
-    <!-- Footer -->
-        <!-- Footer (unchanged from original) -->
-        <footer class="bg-dark text-white py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 text-center">
-                        <h5>SmartBites</h5>
-                        <p>Bringing delicious meals from local restaurants to your doorstep.</p>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <h5>Quick Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="./html/aboutus.html" class="text-white">About Us</a></li>
-                            <li><a href="./html/contacts.html" class="text-white">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <h5>Connect With Us</h5>
-                        <div>
-                            <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
-                            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
-                        </div>
+
+        <!-- footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h5>SmartBites</h5>
+                    <p>Bringing delicious meals from local restaurants to your doorstep.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./html/aboutus.html" class="text-white">About Us</a></li>
+                        <li><a href="./html/contacts.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Connect With Us</h5>
+                    <div>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
     </footer>
 
-    <!-- Bootstrap and Popper JS -->
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script/script.js"></script>
-    
-    
+
 </body>
 </html>
 

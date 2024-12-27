@@ -5,20 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartBites - Login/Signup</title>
     
-    <!-- Bootstrap CSS -->
+    <!-- linking bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- linking some fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- linking css-->
     <link rel="stylesheet" href="../css/signin.css">
     <link rel="stylesheet" href="../css/general.css">
 </head>
+
 <body>
     <div class="container">
         <div class="auth-container">
-            <!-- Logo and Title -->
+            <!-- logo and title-->
             <div class="text-center mb-5 mt-4">
                 <h2>Welcome to SmartBites</h2>
             </div>
 
-            <!-- Tab Navigation -->
+            <!-- sign up and log in tabs -->
             <ul class="nav nav-tabs nav-fill mb-4" id="authTabs" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab">Login</button>
@@ -28,8 +36,10 @@
                 </li>
             </ul>
 
-            <!-- Tab Content -->
+            <!-- tab content-->
             <div class="tab-content" id="authTabsContent">
+
+                <!-- log in tab -->
                 <div class="tab-pane fade show active" id="login" role="tabpanel">
                     <form id="loginForm">
                         <div class="mb-3">
@@ -51,7 +61,7 @@
                     </form>
                 </div>
 
-                <!-- Signup Tab -->
+                <!-- signup tab -->
                 <div class="tab-pane fade" id="signup" role="tabpanel">
                     <form id="signupForm">
                         <div class="mb-3">
@@ -79,7 +89,7 @@
                 </div>
             </div>
 
-            <!-- Social Login -->
+            <!-- social login (using google account or facebook account)-->
             <div class="text-center mt-4 social-login">
                 <p>Or continue with</p>
                 <button class="btn btn-outline-danger">
@@ -90,6 +100,7 @@
                 </button>
             </div>
 
+            <!-- qr code-->
             <div class="text-center mt-4 social-login">
                 <p>Or with QR code</p>
                 <img src="../images/qr-code/qr.png">
@@ -97,10 +108,11 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS and Dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Font Awesome for Social Icons -->
+
+    <!-- for social icons (google icon and facebook icon) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      
 </body>
 </html>
