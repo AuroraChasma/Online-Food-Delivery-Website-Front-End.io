@@ -1,7 +1,7 @@
 # Online-Food-Delivery-Website-Only-Front-End-
 
 ### About this website:
-This was a grouped semester project. I made it using HTML,CSS,JS and Bootstrap.
+This was a group semester project. I made it using HTML, CSS, JS and Bootstrap.
 
 ### Screenshots of the website:
 ![home page - carousel](./readme-pictures/image.png)
