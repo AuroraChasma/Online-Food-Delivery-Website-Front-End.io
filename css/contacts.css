@@ -1,26 +1,36 @@
-
+/* the whole contact container (contact info and contact form */
+/* --------------------------------------------------------------------- */
 .contact-section {
     padding: 50px 0;
-    flex: 1; /* Allows content to expand and push footer to bottom */
+    flex: 1; /* allows content to expand and push footer to bottom */
     margin-top: 100px;
     margin-bottom: 100px;
 }
+/* --------------------------------------------------------------------- */
 
 
 
+/* Contact info and form css */
+/* --------------------------------------------------------------------- */
 .contact-info {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     padding: 30px;
 }
+
 .contact-form {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     padding: 30px;
 }
+/* --------------------------------------------------------------------- */
 
+
+
+/* submit and close buttons success modal buttons*/
+/* --------------------------------------------------------------------- */
 .submit-button {
     background-color: var(--primary-color);
 }
@@ -29,14 +39,14 @@
     background-color: #d45f5f;
 }
 
-footer {
-    margin-top: auto;
-}
-
-
 .close-button {
     background-color: var(--primary-color);
     border: none;
 }
+/* --------------------------------------------------------------------- */
 
+
+footer {
+    margin-top: auto;
+}
 
