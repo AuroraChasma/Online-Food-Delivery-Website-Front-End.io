@@ -1,3 +1,5 @@
+// JS for product filtering
+/* --------------------------------------------------------------------- */
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('productSearchInput');
     const productItems = document.querySelectorAll('.product-item');
@@ -17,8 +19,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+/* --------------------------------------------------------------------- */
 
-// Order Modal Functionality
+
+
+
+// JS for order modal
+/* --------------------------------------------------------------------- */
 document.addEventListener('DOMContentLoaded', function() {
     const orderModal = document.getElementById('orderModal');
     const productNameInput = document.getElementById('orderProductName');
@@ -30,12 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const trackOrderBtn = document.getElementById('trackOrder');
     trackOrderBtn.addEventListener('click', function() {
-    // Create and show the Track Order modal
+    // create and show the Track Order modal
     const trackOrderModal = new bootstrap.Modal(document.getElementById('trackOrderModal'));
     trackOrderModal.show();
     });
 
-    // Add event listeners to all "Place Order" buttons
+    // add event listeners to all "Place Order" buttons
     document.querySelectorAll('.order-btn').forEach(btn => {
         btn.addEventListener('click', function() {
             const productName = this.getAttribute('data-product-name');
@@ -47,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Quantity controls
+    // quantity controls
     decreaseQuantityBtn.addEventListener('click', function() {
         let currentValue = parseInt(quantityInput.value);
         if (currentValue > 1) {
@@ -62,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Confirm Order
+    // confirm order
     confirmOrderBtn.addEventListener('click', function() {
         const productName = productNameInput.value;
         const productPrice = productPriceInput.value;
@@ -70,22 +77,28 @@ document.addEventListener('DOMContentLoaded', function() {
         const deliveryAddress = document.getElementById('orderDeliveryAddress').value;
         const specialInstructions = document.getElementById('orderSpecialInstructions').value;
 
-        // Basic validation
+        // basic validation
         if (!deliveryAddress.trim()) {
             alert('Please enter a delivery address');
             return;
         }
 
-        // Close the modal
+        // close the modal
         const modalInstance = bootstrap.Modal.getInstance(orderModal);
         modalInstance.hide();
     });
 });
+/* --------------------------------------------------------------------- */
 
+
+
+
+
+// JS for transparent navbar and solid navbar
+/* --------------------------------------------------------------------- */
 document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.querySelector(".navbar");
 
-    // Add event listener to window scroll
     window.addEventListener("scroll", function () {
         if (window.scrollY >650) {
             navbar.classList.add("navbar-solid");
@@ -96,4 +109,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+/* --------------------------------------------------------------------- */
+
 
