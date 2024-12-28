@@ -34,159 +34,47 @@
 
 
 
-
-
-
-/* for search bar on top of the carousel(changing zoom levels on different screen sizes using media queries */
+/* for search bar on top of the carousel*/
 /* --------------------------------------------------------------------- */
-@media (min-width: 992.1px) {
-    .search-container {
-        width:80%;
-        height:100px;
-        display: flex;
-        
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translateX(-50%);
-    
-        z-index: 10;
-        border-radius: 50px;
-        max-width: 600px;
-        min-width: 50px;
-        }
+
+.search-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
-    .search-container input {
-        border: none;
-        border-radius: 50px 0 0 50px;
-    }    
-
-    .search-container button {
-        background-color: var(--primary-color);
-        border: none;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;;
-        cursor: pointer;
-        height: 100px;
-    }    
-    
-    .search-container button:hover{
-        background-color:#d45f5f;
-        border: none;
-    }    
-    
-    .search-container button:active{
-        border: none;
-        box-shadow: inset 4px 0px 10px rgba(50, 50, 50, 0.5);
-    }    
-    
-}    
-
-@media (min-width: 768.1px) and (max-width: 992px){
-
-    .search-container {
-        width:80%;
-        height:100px;
-        display: flex;
-        
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translateX(-50%);
-    
-        z-index: 10;
-        border-radius: 50px;
-        max-width: 600px;
-        min-width: 50px;
-        zoom: 0.8;
-    }    
+    top: 65%;
+    right: 46%;
+    transform: translateX(50%);
 
 
-    .search-container input {
-        border: none;
-        border-radius: 50px 0 0 50px;
-    }    
+    z-index: 10; /* so it shows up on top of the carousel*/
+    border: none;
+}
 
-    .search-container button {
-        background-color: var(--primary-color);
-        border: none;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;;
-        cursor: pointer;
-        height: 100px;
-    }    
-    
-    .search-container button:hover{
-        background-color:#d45f5f;
-        border: none;
-    }    
-    
-    .search-container button:active{
-        border: none;
-        box-shadow: inset 4px 0px 10px rgba(50, 50, 50, 0.5);
-    }    
-    
-}    
+.search-container input {
+    width: 100%;
+    border-radius: 50px 0 0 50px;
+    border: none;
+    box-shadow: inset 1px 1px 5px gray;
+}
 
-@media (max-width: 768px) and (min-width: 456.1px) {
-    .search-container {
-        width:80%;
-        height: 100px;
-        display: flex;
-        
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translateX(-50%);
-    
-        z-index: 10;
-        border-radius: 50px;
-        max-width: 600px;
-        min-width: 50px;
-        zoom: 0.7;
-    }    
+.search-container button  {
+    background-color: var(--primary-color);
+    border-radius: 0 50px 50px 0;
+    width: 70%;
+    border: none;
+    padding-top:25px;
+    padding-bottom: 25px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
 
-
-    .search-container input {
-        border: none;
-        border-radius: 50px 0 0 50px;
-    }    
-
-    .search-container button {
-        background-color: var(--primary-color);
-        border: none;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;;
-        cursor: pointer;
-        height: 100px;
-    }    
-    
-    .search-container button:hover{
-        background-color:#d45f5f;
-        border: none;
-    }    
-    
-    .search-container button:active{
-        border: none;
-        box-shadow: inset 4px 0px 10px rgba(50, 50, 50, 0.5);
-    }    
-    
-}    
-
-@media (max-width: 456px) {
-    .search-container, .search-container input{
-        display: none;
-    }    
-}    
-
-
+.search-container button:hover {
+    background-color: #d45f5f;
+}
 
 
 
@@ -198,9 +86,6 @@
     }    
 }    
 /* --------------------------------------------------------------------- */
-
-
-
 
 
 

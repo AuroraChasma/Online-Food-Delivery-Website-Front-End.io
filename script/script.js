@@ -35,8 +35,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const increaseQuantityBtn = document.getElementById('increaseQuantity');
     const confirmOrderBtn = document.getElementById('confirmOrderBtn');
 
+
     const trackOrderBtn = document.getElementById('trackOrder');
     trackOrderBtn.addEventListener('click', function() {
+    // close the order confirmed model
+    const confirmedOrderModalInstance = bootstrap.Modal.getInstance(confirmedOrderModal);
+    confirmedOrderModalInstance.hide();
+
     // create and show the Track Order modal
     const trackOrderModal = new bootstrap.Modal(document.getElementById('trackOrderModal'));
     trackOrderModal.show();
